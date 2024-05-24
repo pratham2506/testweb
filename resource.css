@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Rubik", sans-serif;
-}
+} */
 
 .resource-maindiv{
     width: 70%;
-    margin: 0 auto;
+    margin: 10rem auto;
 }
 
 .resource-section{
@@ -55,6 +55,7 @@
     font-size: 1.5rem;
     line-height: 1;
     color: #2f353e;
+    font-weight: 400;
     width: 60%;
 }
 
@@ -63,6 +64,7 @@
     font-size: 1.125rem;
     margin-left: 2rem;
     color: #999;
+    font-weight: 400;
 }
 
 .resource-text-size{
@@ -100,11 +102,20 @@
 .resource-button button:hover{
     background-color: #fbd306 ;
     color: #fff;
+    border: 1px solid #fbd306;
 }
 
 .resource-span{
     display: flex;
     flex-direction: row;
+}
+
+.resource-catalog{
+    font-size: 3.75rem;
+    text-align: center;
+    color: #2f353e;
+    font-weight: 500;
+    letter-spacing: -.75px;
 }
 
 @media (max-width:1400px) {

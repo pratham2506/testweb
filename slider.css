@@ -1,0 +1,54 @@
+img-comparison-slider{
+    --divider-color: #fbd306;
+    --default-handle-color: #fbd306;
+}
+
+img-comparison-slider:focus-visible {
+    outline : none !important;
+}
+
+/* .slider-example-focus:focus {
+    outline: none;
+    box-shadow: 0px 0px 15px 5px #0c5d10;
+} */
+
+/* .focused {
+    will-change: auto;
+    border: none;
+} */
+
+.before,
+.after {
+    margin: 0;
+}
+
+.before figcaption,
+.after figcaption {
+    background: #fff;
+     border-radius: 0.5rem;
+    color: #2e3452;
+    opacity: 0.8;
+    padding: 2%;
+    font-size: 12px;
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    line-height: 1em;
+    
+}
+
+.before figcaption {
+    left: 12px;
+}
+
+.after figcaption {
+    right: 12px;
+}
+
+
+@media screen and (max-width: 479.95px){
+    .before figcaption,
+    .after figcaption {
+        font-size: 8px;
+    }
+}

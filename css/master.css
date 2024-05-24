@@ -1,0 +1,393 @@
+/* ! Attention please maintain this !
+ * Before you start using / working on this file read following instructions also , preffer to to install Better Comments plugin in your VS code IDE.
+ * 1. add every section name in index on which you are going to start styling in this file
+ * 2. Use indexes to navigate easily by pressing ctrl + f  and simply just search for the index number
+ *
+ * Index
+ * 1. 'see datasheet btn' popup form style 
+ * 2. application number title 
+ * 3. stats contianer style 
+ * 4. mobile hero 
+ * 5. solutions 
+ * 6. testimonial
+ * 7. clientele section 
+ * 8. Get in touch
+ * 9. Empowering section
+ * 10. careers page  */
+/* root style  / variables */
+/* 1. 'see datasheet btn' popup form style  */
+#popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+#popup #popupContent {
+  border-radius: 1rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 1rem;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+}
+#popup #form {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+}
+#popup #form div {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red  */
+  justify-content: space-evenly;
+  align-items: flex-start;
+  /* gap: 0.5rem  */
+  width: 100%;
+}
+#popup #form div .zf-labelName {
+  font-size: 14px;
+  color: #2c2c2c;
+  font-weight: 500;
+  word-spacing: 2px;
+  cursor: pointer;
+}
+#popup #form div .zf-tempFrmWrapper {
+  margin-bottom: 1rem;
+}
+#popup #form div label, #popup #form div input {
+  float: left;
+  clear: both;
+}
+#popup #form div input, #popup #form div textarea {
+  margin: 0.1rem 0;
+  padding: 0.2rem 0.7rem;
+  width: 100%;
+  outline: none;
+  border: 1px solid #bbb;
+  border-radius: 0.5rem;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: 0.2s ease all;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+#popup #form div input:focus, #popup #form div textarea:focus {
+  border-color: rgba(99, 147, 238, 0.863);
+}
+#popup #form div input[type=submit] {
+  padding: 15px 50px;
+  width: auto;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  clear: right;
+  transition: 0.2s ease all;
+}
+#popup #form div input[type=submit]:hover {
+  opacity: 0.8;
+}
+#popup #form div input[type=submit]:active {
+  opacity: 0.4;
+}
+#popup #form .zf-submitColor {
+  margin: 0.1rem auto;
+  padding: 0.2rem 1.5rem;
+  background: #fbd306;
+  border: 1px solid rgb(211, 178, 34);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+#popup #closePopupBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+#popup #closePopupBtn span {
+  font-size: 1.2rem;
+}
+@keyframes highlight {
+  to {
+    background-position: 0 0;
+  }
+}
+.application-title-number {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 0.5rem;
+}
+.application-title-number::before {
+  background-color: #fbd306;
+  content: "";
+  position: absolute;
+  width: calc(100% + 4px);
+  height: 60%;
+  left: -2px;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(-2deg);
+}
+
+.second-stats-block {
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+.second-stats-block .statistic-block {
+  padding: 1rem 0.2rem !important;
+}
+
+.small-screen-hero {
+  display: none;
+  color: #0e1318 !important;
+  background-color: #fbd306;
+  background-image: url(https://static-cse.canva.com/_next/static/assets/wave_w2881xh801_a775fc2518c0a6ca438299351b5d48a3faf59e7348ac4a6f5f88b3b68fd5a06a.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  left: 0;
+  right: 0;
+  top: 0;
+  min-height: 53rem;
+  margin-bottom: -16rem;
+}
+.small-screen-hero .main-hero-container h2 .drone {
+  background: white;
+  padding: 0 0.5rem;
+}
+.small-screen-hero .main-hero-container p {
+  width: 80% !important;
+}
+.small-screen-hero .main-hero-container button {
+  color: white !important;
+  background: rgba(51, 51, 51, 0.8705882353);
+  border: 0.2px solid grey rgba(128, 128, 128, 0.5490196078);
+  box-shadow: 1px 1px 5px rgba(153, 153, 153, 0.6705882353);
+  border-radius: 0.5rem;
+}
+.small-screen-hero .main-hero-container .vdo_container {
+  width: 90%;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.534);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.small-screen-hero .main-hero-container .vdo_container div {
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.434);
+}
+.small-screen-hero .main-hero-container .vdo_container video {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 5px rgba(153, 153, 153, 0.123);
+}
+
+.solutions-card-container .industry-card {
+  border-radius: 0.5rem;
+  background-color: white;
+}
+.solutions-card-container .industry-card .landing-industry-img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  max-height: 13rem !important;
+}
+.solutions-card-container .industry-card .landing-industry-img img {
+  max-height: 13rem !important;
+}
+.solutions-card-container .industry-card h5 {
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 0.3rem 0;
+  background-image: linear-gradient(135deg, #FDEB71 10%, #F8D800 100%);
+  color: #0e1318;
+}
+
+.testimonial .testimonial-text {
+  text-align: justify;
+}
+.testimonial .review-2 {
+  min-height: 23rem;
+  display: flex !important;
+}
+.testimonial .review-2 .review-2-txt {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review-author {
+  padding: 0 !important;
+}
+
+.fading-div {
+  height: 7rem;
+  width: 7rem;
+  position: absolute;
+  z-index: 10000;
+  background-image: linear-gradient(270deg, hsla(0, 0%, 100%, 0) 13.94%, #f4f4f9 60.73%);
+}
+
+.fading-div-right {
+  position: absolute;
+  right: 0.6rem;
+  background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 13.94%, #f4f4f9 60.73%);
+}
+
+.owl-prev {
+  display: none;
+}
+
+.owl-next {
+  display: none;
+}
+
+.fading-div-as-featured {
+  height: 10rem;
+  width: 7rem;
+  z-index: 10000;
+  background-image: linear-gradient(270deg, hsla(0, 0%, 100%, 0) 13.94%, #ffffff 60.73%);
+}
+
+.fading-div-as-featured-left {
+  position: absolute;
+  left: 0;
+}
+
+.fading-div-as-featured-right {
+  position: absolute;
+  right: 0;
+  background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 13.94%, #ffffff 60.73%);
+}
+
+.contact-map {
+  margin: 10rem 0;
+  display: flex;
+  max-width: 1300px;
+  margin: 10rem auto;
+  justify-content: center;
+  align-items: center;
+}
+.contact-map .map-box {
+  height: -moz-max-content;
+  height: max-content;
+  border: 0.5px solid rgba(108, 117, 125, 0.6156862745);
+  padding: 0.5rem 0.5rem 0.1rem;
+  border-radius: 0.5rem;
+}
+.contact-map .map-box:hover {
+  border-color: #fbd306;
+}
+.contact-map .map-box iframe {
+  border-radius: 0.5rem;
+}
+.contact-map .details-box {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-map .details-box .details {
+  width: 80%;
+}
+.contact-map .details-box .details .detail {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+}
+.contact-map .details-box .details .detail:hover span {
+  color: #fbd306;
+}
+.contact-map .details-box .details .detail:hover p {
+  text-decoration: underline;
+  text-decoration-color: #fbd306;
+  color: #0e1318;
+}
+.contact-map .details-box .details .detail:hover p .email-link-general {
+  color: #007bff;
+}
+.contact-map .details-box .details .detail:hover p .email-link-sales {
+  color: #28a745;
+}
+.contact-map .details-box .details .detail:hover p .email-link-careers {
+  color: #ffc107;
+}
+.contact-map .details-box .details .detail:hover p .email-link-support {
+  color: #6610f2;
+}
+.contact-map .details-box .details .detail span {
+  font-size: 3rem;
+}
+.contact-map .details-box .details .detail p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.empowering-title {
+  font-weight: 400 !important;
+  word-spacing: 1px !important;
+}
+
+.yellow-high {
+  background: white;
+  padding: 0 0.5rem;
+  color: #2f353e !important;
+}
+
+.ytp-title-channel-logo {
+  display: none !important;
+}
+
+#careers-section {
+  margin-top: 10rem;
+  margin-bottom: 5%;
+}
+#careers-section .careers-section-content {
+  background: rgba(233, 236, 239, 0.768627451);
+  color: #0e1318;
+  border-radius: 1rem;
+  border: white;
+  background: rgba(155, 155, 155, 0.2);
+  box-shadow: 2px 2px 2px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+#careers-section .careers-section-content .careers-section-content-mail {
+  color: blue;
+  cursor: pointer;
+  font-weight: 500;
+}
+#careers-section .careers-section-content .careers-section-content-download-document {
+  color: blue;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  letter-spacing: 1px;
+}/*# sourceMappingURL=master.css.map */

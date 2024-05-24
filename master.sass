@@ -1,0 +1,404 @@
+/* 
+ ! Attention please maintain this !
+ Before you start using / working on this file read following instructions also , preffer to to install Better Comments plugin in your VS code IDE.
+ 1. add every section name in index on which you are going to start styling in this file
+ 2. Use indexes to navigate easily by pressing ctrl + f  and simply just search for the index number
+
+ Index
+ 1. 'see datasheet btn' popup form style 
+ 2. application number title 
+ 3. stats contianer style 
+ 4. mobile hero 
+ 5. solutions 
+ 6. testimonial
+ 7. clientele section 
+ 8. Get in touch
+ 9. Empowering section
+ 10. careers page 
+
+/* root style  / variables */
+$indrones-color: #fbd306
+$jet-black-font: #0e1318
+
+/* 1. 'see datasheet btn' popup form style  */
+#popup
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.8)
+    z-index: 9999
+
+    #popupContent
+        border-radius: 1rem
+        position: relative
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        background-color: #fff
+        padding: 1rem
+        width: max-content
+        text-align: center
+
+    #form
+        padding: 1rem 2rem
+        display: flex
+        flex-direction: column
+        justify-content: left
+        align-items: flex-start
+
+        div
+            display: flex
+            flex-direction: column
+            /* border: 1px solid red  */
+            justify-content: space-evenly
+            align-items: flex-start
+            /* gap: 0.5rem  */
+            width: 100%
+
+            .zf-labelName
+                font-size: 14px
+                color: #2c2c2c
+                font-weight: 500
+                word-spacing: 2px
+                cursor: pointer
+            .zf-tempFrmWrapper
+                margin-bottom: 1rem
+
+            label, input
+                float: left
+                clear: both
+
+            input , textarea
+                margin: 0.1rem 0
+                padding: 0.2rem 0.7rem
+                width: 100%
+                outline: none
+                border: 1px solid #bbb
+                border-radius: 0.5rem
+                display: inline-block
+                -webkit-box-sizing: border-box
+                -moz-box-sizing: border-box
+                box-sizing: border-box
+                -webkit-transition: 0.2s ease all
+                -moz-transition: 0.2s ease all
+                -ms-transition: 0.2s ease all
+                -o-transition: 0.2s ease all
+                transition: 0.2s ease all
+                -webkit-border-radius: 0.5rem
+                -moz-border-radius: 0.5rem
+                -ms-border-radius: 0.5rem
+                -o-border-radius: 0.5rem
+
+            input:focus , textarea:focus
+                border-color: rgba(99, 147, 238, 0.863)
+
+            input[type=submit]
+                padding: 15px 50px
+                width: auto
+                border: none
+                color: white
+                cursor: pointer
+                display: inline-block
+
+                clear: right
+                -webkit-transition: 0.2s ease all
+                -moz-transition: 0.2s ease all
+                -ms-transition: 0.2s ease all
+                -o-transition: 0.2s ease all
+                transition: 0.2s ease all
+
+            input[type=submit]:hover
+                opacity: 0.8
+
+            input[type="submit"]:active
+                opacity: 0.4
+
+        .zf-submitColor
+            margin: 0.1rem auto
+            padding: 0.2rem 1.5rem
+            background: $indrones-color
+            border: 1px solid rgb(211, 178, 34)
+            border-radius: 0.5rem
+            -webkit-border-radius: 0.5rem
+            -moz-border-radius: 0.5rem
+            -ms-border-radius: 0.5rem
+            -o-border-radius: 0.5rem
+
+    #closePopupBtn
+        position: absolute
+        top: 10px
+        right: 10px
+        cursor: pointer
+
+        span
+            font-size: 1.2rem
+
+@-webkit-keyframes highlight
+  to
+    background-position: 0 0
+
+@keyframes highlight
+    to
+        background-position: 0 0
+// 2. application number title 
+.application-title-number
+    position: relative
+    width: fit-content
+    padding: 0 0.5rem
+
+    &::before
+        background-color: $indrones-color
+        content: ""
+        position: absolute
+        width: calc(100% + 4px)
+        height: 60%
+        left: -2px
+        bottom: 0
+        z-index: -1
+        transform: rotate(-2deg)
+
+// 3. stats contianer style 
+
+.stats-container
+    div
+        // min-width: max-content
+.second-stats-block
+    min-width: max-content
+    .statistic-block
+        padding: 1rem 0.2rem !important
+
+// 4. Mobile hero 
+.small-screen-hero
+    display: none
+    color: #0e1318 !important
+    background-color: #fbd306
+    background-image: url(https://static-cse.canva.com/_next/static/assets/wave_w2881xh801_a775fc2518c0a6ca438299351b5d48a3faf59e7348ac4a6f5f88b3b68fd5a06a.png)
+    background-repeat: no-repeat
+    background-position: bottom
+    left: 0
+    right: 0
+    top: 0
+    min-height: 53rem
+    margin-bottom: -16rem
+
+    .main-hero-container
+        h2
+            .drone
+                background: white
+                padding: 0 0.5rem
+        p
+            width: 80% !important
+
+        button
+            color: white !important
+            background: #333333de
+            border: 0.2px solid grey #8080808c
+            box-shadow: 1px 1px 5px #999999ab
+            border-radius: 0.5rem
+
+        .vdo_container
+            width: 90%
+            border-radius: 1rem
+            background: rgba(255, 255, 255, 0.534)
+            display: flex
+            justify-content: center
+            align-items: center
+
+            div
+                border-radius: 1rem
+                -webkit-border-radius: 1rem
+                -moz-border-radius: 1rem
+                -ms-border-radius: 1rem
+                -o-border-radius: 1rem
+                display: flex
+                justify-content: center
+                align-items: center
+                background: rgba(255, 255, 255, 0.434)
+            video
+                width: 100%
+                border-radius: 1rem
+                box-shadow: 1px 1px 5px rgba(153, 153, 153, 0.123)
+
+//   5. solutions
+
+.solutions-card-container
+    .industry-card
+        border-radius: 0.5rem
+        background-color: white
+
+        .landing-industry-img
+            border-top-left-radius: 0.5rem
+            border-top-right-radius: 0.5rem
+            max-height: 13rem !important
+
+            img
+                max-height: 13rem !important
+
+        h5
+            background-color: #D9AFD9
+            background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%)
+            border-bottom-left-radius: 0.5rem
+            border-bottom-right-radius: 0.5rem
+            padding: 0.3rem 0
+            background-image: linear-gradient( 135deg, #FDEB71 10%, #F8D800 100%)
+            color: $jet-black-font
+
+// 6 . testimonial
+
+.testimonial
+    .testimonial-text
+        text-align: justify
+    .review-2
+        min-height: 23rem
+        display: flex !important
+
+        .review-2-txt
+            display: flex !important
+            flex-direction: column
+            justify-content: space-between
+
+.review-author
+    padding: 0 !important
+// 7. clientele section 
+
+.fading-div
+    height: 7rem
+    width: 7rem
+    position: absolute
+    z-index: 10000
+    background-image: linear-gradient(270deg,hsla(0,0%,100%,0) 13.94%,#f4f4f9 60.73%)
+
+.fading-div-right
+    position: absolute
+    right: 0.6rem
+    background-image: linear-gradient(90deg,hsla(0,0%,100%,0) 13.94%,#f4f4f9 60.73%)
+
+// nav buttons of caurosel removed    
+.owl-prev
+    display: none
+.owl-next
+    display: none
+
+// 7. As featured section style   
+
+.fading-div-as-featured
+    height: 10rem
+    width: 7rem
+    z-index: 10000
+    background-image: linear-gradient(270deg,hsla(0,0%,100%,0) 13.94%,#ffffff 60.73%)
+
+.fading-div-as-featured-left
+    position: absolute
+    left: 0
+
+.fading-div-as-featured-right
+    position: absolute
+    right: 0
+    background-image: linear-gradient(90deg,hsla(0,0%,100%,0) 13.94%,#ffffff 60.73%)
+
+// 8. Get in touch
+.contact-map
+    margin: 10rem 0
+    display: flex
+    // flex-wrap: wrap
+    // border: 1px solid red
+    max-width: 1300px
+    margin: 10rem auto
+    justify-content: center
+    align-items: center
+
+    .map-box
+        height: max-content
+        border: 0.5px solid #6c757d9d
+        padding: 0.5rem 0.5rem 0.1rem
+        border-radius: 0.5rem
+
+        &:hover
+            border-color: $indrones-color
+
+        iframe
+            border-radius: 0.5rem
+
+    .details-box
+        flex-grow: 1
+        display: flex
+        justify-content: center
+        align-items: center
+        // border: 1px solid red
+
+        .details
+            width: 80%
+
+            .detail
+                display: flex
+                justify-content: left
+                align-items: center
+                gap: 1rem
+
+                &:hover
+                    span
+                        color: $indrones-color
+                    p
+                        text-decoration: underline
+                        text-decoration-color: $indrones-color
+                        color: $jet-black-font
+
+                        .email-link-general
+                            color: #007bff
+                        .email-link-sales
+                            color: #28a745
+                        .email-link-careers
+                            color: #ffc107
+                        .email-link-support
+                            color: #6610f2
+                span
+                    font-size: 3rem
+                p
+                    font-size: 1.5rem
+                    margin-top: 1rem
+
+// 9. Empowering section
+.empowering-title
+    font-weight: 400 !important
+    word-spacing: 1px !important
+
+.yellow-high
+    background: white
+    padding: 0 0.5rem
+    color: #2f353e !important
+
+.ytp-title-channel-logo
+    display: none !important
+
+// 10. Careers page
+
+#careers-section
+    margin-top: 10rem
+    margin-bottom: 5%
+
+    .careers-section-content
+        background: #e9ecefc4
+        color: $jet-black-font
+        border-radius: 1rem
+        border: white
+        background: rgba( 155, 155, 155, 0.2 )
+        box-shadow: 2px 2px 2px 0 rgba( 31, 38, 135, 0.37 )
+        backdrop-filter: blur( 1px )
+        -webkit-backdrop-filter: blur( 1px )
+        border-radius: 10px
+        border: 1px solid rgba( 255, 255, 255, 0.18 )
+
+        .careers-section-content-mail
+            color: blue
+            cursor: pointer
+            font-weight: 500
+
+        .careers-section-content-download-document
+            color: blue
+            font-weight: 600
+            cursor: pointer
+            text-decoration: underline
+            letter-spacing: 1px
