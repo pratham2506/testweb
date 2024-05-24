@@ -55,7 +55,7 @@
     font-size: 1.5rem;
     line-height: 1;
     color: #2f353e;
-    margin-right: .2rem;
+    width: 60%;
 }
 
 .resource-text-date{
@@ -102,9 +102,20 @@
     color: #fff;
 }
 
+.resource-span{
+    display: flex;
+    flex-direction: row;
+}
+
 @media (max-width:1400px) {
     .resource-maindiv{
         width: 80%;
+    }
+}
+
+@media (max-width:1220px) {
+    .resource-text-heading{
+        width: 50%;
     }
 }
 
@@ -135,6 +146,9 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-end;
+    }
+    .resource-text-heading{
+        width: 100%;
     }
     .resource-text-date{
         margin-left: 0;
