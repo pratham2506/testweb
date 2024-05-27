@@ -130,6 +130,16 @@
 .resource-qr img{
     max-width: 500px;
     max-height: 500px;
+    margin-top: 1rem;
+}
+
+.resource-qr p{
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: #2f353e;
+    font-weight: 400;
+    width: 100%;
 }
 
 @media (max-width:1400px) {
