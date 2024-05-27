@@ -53,7 +53,7 @@
 
 .resource-text-heading{
     font-size: 1.5rem;
-    line-height: 1;
+    line-height: 1.2;
     color: #2f353e;
     font-weight: 400;
     width: 60%;
@@ -139,6 +139,40 @@
     line-height: 1;
     color: #2f353e;
     font-weight: 400;
+    width: 100%;
+}
+
+.resource-video{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.resource-video123{
+    width: 30%;
+}
+
+.resource-video-video{
+    width: 100%;
+    border-radius: 1rem;
+    height: 200px;
+}
+
+.resource-video-video iframe{
+    border-radius: 1rem;
+}
+
+.resource-video-text{
+    width: 100%;
+    height: 200px;
+    padding: 1.2rem 0;
+}
+
+.resource-video-text p{
     width: 100%;
 }
 
