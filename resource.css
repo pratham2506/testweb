@@ -57,6 +57,7 @@
     color: #2f353e;
     font-weight: 400;
     width: 60%;
+    text-transform: capitalize;
 }
 
 .resource-text-date{
@@ -179,6 +180,7 @@
 
 .resource-video-text p{
     margin-left: 0;
+    width: 100%;
 }
 
   
