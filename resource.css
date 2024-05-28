@@ -268,13 +268,14 @@
     }
     .resource-video{
         grid-template-columns: repeat(auto-fit,minmax(70%,1fr));
+        gap: 0;
     }
     .resource-video-123{
         /* height: 480px; */
         padding: 0;
     }
     .resource-video-video{
-        height: 250px;
+        height: 200px;
     }
 }
 
@@ -282,12 +283,6 @@
     .resource-qr img{
         width: 350px;
         height: 350px;
-    }
-    /* .resource-video-123{
-        height: 480px;
-    } */
-    .resource-video-video{
-        height: 200px;
     }
 }
 
