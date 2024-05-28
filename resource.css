@@ -269,9 +269,10 @@
     .resource-video{
         grid-template-columns: repeat(auto-fit,minmax(70%,1fr));
     }
-    /* .resource-video-123{
-        height: 480px;
-    } */
+    .resource-video-123{
+        /* height: 480px; */
+        padding: 0;
+    }
     .resource-video-video{
         height: 250px;
     }
