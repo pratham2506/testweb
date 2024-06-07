@@ -14,9 +14,13 @@
     width: 100%;
 }
 
+.resource-banner-mobile{
+    display: none;
+}
+
 .resource-maindiv{
     width: 70%;
-    margin: 10rem auto;
+    margin: 3rem auto;
 }
 
 .resource-section{
@@ -25,7 +29,7 @@
 }
 
 .resource-section h1{
-    font-size: 2.125rem;
+    font-size: clamp(1.5rem, 3vw, 2.125rem);;
     font-weight: 500;
     width: fit-content;
     position: relative;
@@ -60,7 +64,7 @@
 }
 
 .resource-text-heading{
-    font-size: 1.5rem;
+    font-size: clamp(1.3rem, 2.5vw, 1.5rem);
     line-height: 1.2;
     color: #2f353e;
     font-weight: 400;
@@ -70,7 +74,7 @@
 
 .resource-text-date{
     line-height: 1;
-    font-size: 1.125rem;
+    font-size: clamp(1rem, 2vw, 1.125rem);
     margin-left: 2rem;
     color: #999;
     font-weight: 400;
@@ -78,7 +82,7 @@
 
 .resource-text-size{
     line-height: 1;
-    font-size: 1.125rem;
+    font-size: clamp(.9rem, 1.8vw, 1.125rem);
     margin-right: 2rem;
     font-weight: 500;
     color: #666;
@@ -135,6 +139,10 @@
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
+}
+
+.resource-qr-mobile{
+    display: none;
 }
 
 .resource-qr img{
@@ -286,6 +294,19 @@
     .resource-video-video{
         height: 200px;
     }
+    .resource-banner-fullsize{
+        display: none;
+    }
+    .resource-banner-mobile{
+        display: block;
+        margin-top: 5rem;
+    }
+    .resource-qr-fullsize{
+        display: none;
+    }
+    .resource-qr-mobile{
+        display: block;
+    }    
 }
 
 @media (max-width:700px) {
