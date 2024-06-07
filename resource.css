@@ -6,6 +6,14 @@
     font-family: "Rubik", sans-serif;
 } */
 
+.resource-banner-div{
+    width: 100%;
+}
+
+.resource-banner-div img{
+    width: 100%;
+}
+
 .resource-maindiv{
     width: 70%;
     margin: 10rem auto;
@@ -36,11 +44,6 @@
     z-index: -1;
     transform: rotate(-2deg);
 }
-
-.resource-maindiv img{
-    width: 100%;
-}
-
 
 .resource-info{
     width: 100%;
