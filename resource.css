@@ -398,6 +398,9 @@
         text-align: center;
         font-size: 2rem;
     }
+    .resource-lastdiv{
+        background-attachment: scroll;
+    }
     .resource-qr{
         flex-direction: column;
         height: 100%;
