@@ -424,7 +424,6 @@
         height: 180px;
     }
     .resource-banner-flexdiv{
-        height: 130vh;
         background-size: cover;
         background-image: url('./images/resource-banner-another.png');
     }
@@ -452,7 +451,6 @@
         padding: 0;
     }
     .resource-banner-flexdiv{
-        height: 100vh;
         background-image: none;
         margin-top: 3rem;
         flex-flow: column-reverse;
@@ -471,9 +469,6 @@
 }
 
 @media (max-width:456px) {
-    .resource-banner-flexdiv{
-        height: 100vh;
-    }
     .resource-qr-mainimg img{
         height: 300px;
     }
