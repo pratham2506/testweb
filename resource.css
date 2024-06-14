@@ -406,7 +406,7 @@
         height: 100%;
     }
     .resource-qr-mainimg{
-        width: 100%;
+        display: none;
     }
     .resource-qr-mainimg img{
         height: 100%;
